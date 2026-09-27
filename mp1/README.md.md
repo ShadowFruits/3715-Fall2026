@@ -22,9 +22,9 @@
 
 
 
-**Total Notebook Runtime**:  
+**Total Notebook Runtime**:
 
 
 
-Fill in after notebook is completed
+Fill in after notebook is completed ( must be under 5 minutes )
 
