@@ -20,7 +20,6 @@ def packet_errors(n_pkt, n_bits, p, rng):
 #Uses the binomial model to generate error probablity for each number of errors in the packet. RNG looks at the probability for number of error and selects a how many errors are in that packet. 
 	errors = rng.binomial(n_bits, p, size=n_pkt)
 
-#Returns the amount of errors in the packets
 	return errors
 
 
@@ -28,17 +27,16 @@ def attempts_until_clean(n_trials, q, rng):
 	"""Attempts until the first clean packet"""
 	"""q = per - attempt  clean probability"""
 
-#Generates the number of attempts needed for each trial
+#Generates the number of attempts needed for each trial based on the probability of it happening
 	attempts = rng.geometric(q, size=n_trials)
 
-#Returns one attempt count for each trial
 	return attempts
 
 
 def tv_distance(pmf1, pmf2):
 	"""Total Variation distance, both arrays over the same support"""
 
-#Converts both PMFs into NumPy arrays
+#Converts both PMFs into an array and changes data type to accept decimals
 	pmf1 = numpy.asarray(pmf1, dtype=float)
 	pmf2 = numpy.asarray(pmf2, dtype=float)
 
@@ -46,8 +44,8 @@ def tv_distance(pmf1, pmf2):
 	if pmf1.shape != pmf2.shape:
 		raise ValueError("The PMFs must have the same shape.")
 
-#Finds the absolute difference at each outcome
+#Absolute difference between binomial and poisson probabilities
 	absolute_differences = numpy.abs(pmf1 - pmf2)
 
-#Returns one-half of the sum of the absolute differences
+#Sum the differences and multiply by 1/2 according to Step 5 of the manual. This helps prevent the issue when adding two probabilties summing to 2. 
 	return 0.5 * numpy.sum(absolute_differences)
