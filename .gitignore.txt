@@ -1,6 +1,6 @@
 # Ignore Jupyter checkpoint files
-.ipynb_checkpoints
+.ipynb_checkpoints/
 
 # Ignore Python cache files
-__pycache__
-.pyc
+__pycache__/
+*.pyc
