@@ -23,8 +23,5 @@
 
 
 **Total Notebook Runtime**:
-0.15 minutes or 0.
-
-
-Fill in after notebook is completed ( must be under 5 minutes )
+0.13 or 8.05 seconds
 
