@@ -23,5 +23,5 @@
 
 
 **Total Notebook Runtime**:
-0.2 minutes
+0.32 minutes
 
