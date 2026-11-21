@@ -40,7 +40,7 @@ def is_valid_covariance(S, tol=1e-10):
 	if not numpy.allclose(S, S.T, rtol=0, atol=tol):
 		return False
 
-#We use numpy.linalg.eigvalsh because S is symmetric which means it always returns the imaginary numbers as well. Since we only want real numbers we use eigvalsh.
+#We use numpy.linalg.eigvalsh because S is symmetric which means it always returns the imaginary numbersmake . Since we only want real numbers we use eigvalsh.
 	eigenvalues = numpy.linalg.eigvalsh(S)
 
 #Positive semidefinite means every eigenvalue is 0 or larger. The tolerance lets a very small negative eigenvalue pass, since rounding can cause one.
