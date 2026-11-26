@@ -2,6 +2,7 @@
 
 SEED = 644789544          #Drawn 2026-11-20, do not change
 
+**Part II Track A:** Build an Application (Orbit Power Generation for CADENCE)
 
 **Team Members \& Responsibilities**
 

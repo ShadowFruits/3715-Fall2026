@@ -1,7 +1,8 @@
-**ECE 3715 Mini-Project 3**
+**ECE 3715 Final Project**
 
-SEED = 295929189          #Drawn 2026-11-14, do not change
+SEED = 644789544          #Drawn 2026-11-20, do not change
 
+**Part II Track A:** Build an Application (Orbit Power Generation for CADENCE)
 
 **Team Members \& Responsibilities**
 
@@ -20,6 +21,7 @@ SEED = 295929189          #Drawn 2026-11-14, do not change
 **William Hsu**
 
 * Worked mainly on
+
 
 
 **Total Notebook Runtime**:
